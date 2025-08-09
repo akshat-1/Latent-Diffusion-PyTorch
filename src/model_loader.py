@@ -1,8 +1,8 @@
-from clip import CLIP
-from encoder import VAE_Encoder
-from decoder import VAE_Decoder
-from diffusion import Diffusion
-import model_converter
+from src.clip import CLIP
+from src.encoder import VAE_Encoder
+from src.decoder import VAE_Decoder
+from src.diffusion import Diffusion
+import src.model_converter as model_converter
 
 def perload_models_from_standard_weights(ckpt_path, device):
     state_dict = model_converter.load_from_standard_weights(ckpt_path, device)

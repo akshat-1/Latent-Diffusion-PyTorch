@@ -1,5 +1,5 @@
-import model_loader
-import pipeline
+import src.model_loader as model_loader
+import src.pipeline as pipeline
 import cv2
 from transformers import CLIPTokenizer
 import torch
